@@ -1,0 +1,40 @@
+{
+  "Vehicles": [
+    {
+      "Vehicle_ID": 1,
+      "Category": "Car",
+      "Reason": "Exposed electrical wires",
+      "Number_of_Incidents": 0,
+      "Operable_Region": 7,
+      "last_inspection": "26-11-2025",
+      "Inspector_ID": 1001
+    },
+    {
+      "Vehicle_ID": 2,
+      "Category": "Truck",
+      "Reason": "heavy weight balance",
+      "Number_of_Incidents": 2,
+      "Operable_Region": 6,
+      "last_inspection": "07-02-2025",
+      "Inspector_ID": 1002
+    },
+    {
+      "Vehicle_ID": 3,
+      "Category": "Van",
+      "Reason": "Rusted chassis",
+      "Number_of_Incidents": 4,
+      "Operable_Region": 6,
+      "last_inspection": "07-10-2025",
+      "Inspector_ID": 1003
+    },
+    {
+      "Vehicle_ID": 4,
+      "Category": "Motorcycle",
+      "Reason": "Speed wobble",
+      "Number_of_Incidents": 2,
+      "Operable_Region": 7,
+      "last_inspection": "02-09-2025",
+      "Inspector_ID": 1004
+    }
+  ]
+}
