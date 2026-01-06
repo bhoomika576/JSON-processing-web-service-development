@@ -6,7 +6,7 @@
       "Reason": "Exposed electrical wires",
       "Number_of_Incidents": 0,
       "Operable_Region": 7,
-      "last_inspection": "26-11-2025",
+      "Last_Inspection": "2025-11-26",
       "Inspector_ID": 1001
     },
     {
@@ -15,7 +15,7 @@
       "Reason": "heavy weight balance",
       "Number_of_Incidents": 2,
       "Operable_Region": 6,
-      "last_inspection": "07-02-2025",
+      "Last_Inspection": "2025-02-07",
       "Inspector_ID": 1002
     },
     {
@@ -24,7 +24,7 @@
       "Reason": "Rusted chassis",
       "Number_of_Incidents": 4,
       "Operable_Region": 6,
-      "last_inspection": "07-10-2025",
+      "Last_Inspection": "2025-10-07",
       "Inspector_ID": 1003
     },
     {
@@ -33,7 +33,7 @@
       "Reason": "Loose chain",
       "Number_of_Incidents": 2,
       "Operable_Region": 7,
-      "last_inspection": "02-09-2025",
+      "Last_Inspection": "2025-09-02",
       "Inspector_ID": 1004
     },
     {
@@ -42,7 +42,7 @@
       "Reason": "Faulty emergency exit",
       "Number_of_Incidents": 1,
       "Operable_Region": 8,
-      "last_inspection": "12-12-2025",
+      "Last_Inspection": "2025-12-12",
       "Inspector_ID": 1005
     },
     {
@@ -51,7 +51,7 @@
       "Reason": "Expired fire extinguisher",
       "Number_of_Incidents": 0,
       "Operable_Region": 7,
-      "last_inspection": "15-01-2026",
+      "Last_Inspection": "2026-01-15",
       "Inspector_ID": 1001
     },
     {
@@ -60,7 +60,7 @@
       "Reason": "Worn tire treads",
       "Number_of_Incidents": 3,
       "Operable_Region": 6,
-      "last_inspection": "20-11-2025",
+      "Last_Inspection": "2025-11-20",
       "Inspector_ID": 1006
     },
     {
@@ -69,7 +69,7 @@
       "Reason": "Oil leak detected",
       "Number_of_Incidents": 1,
       "Operable_Region": 5,
-      "last_inspection": "05-10-2025",
+      "Last_Inspection": "2025-10-05",
       "Inspector_ID": 1003
     },
     {
@@ -78,9 +78,8 @@
       "Reason": "Broken indicator light",
       "Number_of_Incidents": 0,
       "Operable_Region": 7,
-      "last_inspection": "28-12-2025",
+      "Last_Inspection": "2025-12-28",
       "Inspector_ID": 1007
     }
-
   ]
 }
