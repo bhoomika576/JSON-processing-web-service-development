@@ -1,37 +1,34 @@
 ﻿using System.Text.Json.Serialization;
 
 namespace JSON.model
+{
+    public class Vehicle
     {
-        public class Data
-        {
+        [JsonPropertyName("Vehicle_ID")]
+        public int VehicleID { get; set; }
 
-            [JsonPropertyName("Vehicle_ID")]
-            public int VehicleID { get; set; }
+        [JsonPropertyName("Category")]
+        public string Category { get; set; }
 
-            [JsonPropertyName("Category")]
-            public string Category { get; set; }
+        [JsonPropertyName("Reason")]
+        public string Reason { get; set; }
 
-            [JsonPropertyName("Reason")]
-            public string Reason { get; set; }
+        [JsonPropertyName("Number_of_Incidents")]
+        public int NumOfIncidents { get; set; }
 
-            [JsonPropertyName("Number_of_Incidents")]
-            public int Num_Of_Incidents { get; set; }
+        [JsonPropertyName("Operable_Region")]
+        public int OperableRegion { get; set; }
 
-            [JsonPropertyName("Operable_Region")]
-            public int Region { get; set; }
+        [JsonPropertyName("Last_Inspection")]
+        public DateOnly LastInspection { get; set; }
 
-            [JsonPropertyName("last_Inspection")]
-            public DateTime LastInspection { get; set; }
-
-            [JsonPropertyName("Inspector_ID")]
-            public int InspectorID { get; set; }
-        }
-
-
-        public class VehicleData
-        {
-            [JsonPropertyName("Vehicles")]
-
-            public List<Data> Vehicles { get; set; }
-        }
+        [JsonPropertyName("Inspector_ID")]
+        public int InspectorID { get; set; }
     }
+
+    public class VehicleData
+    {
+        [JsonPropertyName("Vehicles")]
+        public List<Vehicle> Vehicles { get; set; }
+    }
+}
