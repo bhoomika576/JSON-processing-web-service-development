@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-    namespace JSON.model
+namespace JSON.model
     {
-        public class data
+        public class Data
         {
 
             [JsonPropertyName("Vehicle_ID")]
@@ -20,8 +20,8 @@
             [JsonPropertyName("Operable_Region")]
             public int Region { get; set; }
 
-            [JsonPropertyName("last_inspection")]
-            public DateOnly LastInspection { get; set; }
+            [JsonPropertyName("last_Inspection")]
+            public DateTime LastInspection { get; set; }
 
             [JsonPropertyName("Inspector_ID")]
             public int InspectorID { get; set; }
@@ -32,6 +32,6 @@
         {
             [JsonPropertyName("Vehicles")]
 
-            public List<data> vehicles { get; set; }
+            public List<Data> Vehicles { get; set; }
         }
     }
