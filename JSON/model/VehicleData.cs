@@ -2,7 +2,7 @@
 
 namespace JSON.model
     {
-        public class Data
+        public class VehicleData
         {
 
             [JsonPropertyName("Vehicle_ID")]
@@ -28,10 +28,10 @@ namespace JSON.model
         }
 
 
-        public class VehicleData
+        public class VehiclesData
         {
             [JsonPropertyName("Vehicles")]
 
-            public List<Data> Vehicles { get; set; }
+            public List<VehicleData> vehicles { get; set; }
         }
     }

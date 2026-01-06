@@ -28,14 +28,10 @@ namespace JSON
                         int inspectorID = vehicle.GetProperty("Inspector_ID").GetInt32();
                         
                         return (vehicleID, category, reason, numOfIncidents, operableRegion, lastInspection, inspectorID);
-
-
                     }
                 }
-
             }
+            throw new InvalidOperationException("No vehicle data found in JSON.");
         }
-
-
     }
 }
