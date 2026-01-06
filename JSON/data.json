@@ -30,11 +30,57 @@
     {
       "Vehicle_ID": 4,
       "Category": "Motorcycle",
-      "Reason": "Speed wobble",
+      "Reason": "Loose chain",
       "Number_of_Incidents": 2,
       "Operable_Region": 7,
       "last_inspection": "02-09-2025",
       "Inspector_ID": 1004
+    },
+    {
+      "Vehicle_ID": 5,
+      "Category": "Bus",
+      "Reason": "Faulty emergency exit",
+      "Number_of_Incidents": 1,
+      "Operable_Region": 8,
+      "last_inspection": "12-12-2025",
+      "Inspector_ID": 1005
+    },
+    {
+      "Vehicle_ID": 6,
+      "Category": "Car",
+      "Reason": "Expired fire extinguisher",
+      "Number_of_Incidents": 0,
+      "Operable_Region": 7,
+      "last_inspection": "15-01-2026",
+      "Inspector_ID": 1001
+    },
+    {
+      "Vehicle_ID": 7,
+      "Category": "Truck",
+      "Reason": "Worn tire treads",
+      "Number_of_Incidents": 3,
+      "Operable_Region": 6,
+      "last_inspection": "20-11-2025",
+      "Inspector_ID": 1006
+    },
+    {
+      "Vehicle_ID": 8,
+      "Category": "Van",
+      "Reason": "Oil leak detected",
+      "Number_of_Incidents": 1,
+      "Operable_Region": 5,
+      "last_inspection": "05-10-2025",
+      "Inspector_ID": 1003
+    },
+    {
+      "Vehicle_ID": 9,
+      "Category": "Motorcycle",
+      "Reason": "Broken indicator light",
+      "Number_of_Incidents": 0,
+      "Operable_Region": 7,
+      "last_inspection": "28-12-2025",
+      "Inspector_ID": 1007
     }
+
   ]
 }
