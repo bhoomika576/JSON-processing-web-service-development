@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="model\data.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
