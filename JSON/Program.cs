@@ -1,6 +1,5 @@
-﻿using JSON;
-using JSON.model;
-using System.Reflection.PortableExecutable;
+﻿using JSON.model;
+using System.Text.Json;
 
 namespace JSON
 {
@@ -20,9 +19,33 @@ namespace JSON
             //}
 
 
+            reader fileReader = new reader();
+            List<Vehicle> myVehicles = fileReader.ReadJson();
+            string dummyJson = """
+        {
+            "Vehicle_ID": 999,
+            "Category": "Bulldozer",
+            "Reason": "Engine overheating",
+            "Number_of_Incidents": 3,
+            "Operable_Region": 7,
+            "Last_Inspection": "2024-01-15",
+            "Inspector_ID": 404
+        }
+        """;
+            try
+            {
+                Vehicle? newVehicle = JsonSerializer.Deserialize<Vehicle>(dummyJson);
 
-            reader reader = new reader();
-            List<Vehicle> myVehicles = reader.ReadJson();
+                if (newVehicle != null)
+                {
+                    myVehicles.Add(newVehicle);
+                    Console.WriteLine(">> New record created and added to list in memory.\n");
+                }
+            }
+            catch (JsonException ex)
+            {
+                Console.WriteLine($"Error parsing JSON: {ex.Message}");
+            }
 
             foreach (var v in myVehicles)
             {
@@ -47,6 +70,9 @@ namespace JSON
                 Console.WriteLine($"Last Inspected: {v.LastInspection}");
                 Console.WriteLine("\n");
             }
+
+
+
 
         }
     }
