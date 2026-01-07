@@ -1,0 +1,85 @@
+{
+  "Vehicles": [
+    {
+      "Vehicle_ID": 1,
+      "Category": "Car",
+      "Reason": "Exposed electrical wires",
+      "Number_of_Incidents": 0,
+      "Operable_Region": 7,
+      "Last_Inspection": "2025-11-26",
+      "Inspector_ID": 1001
+    },
+    {
+      "Vehicle_ID": 2,
+      "Category": "Truck",
+      "Reason": "heavy weight balance",
+      "Number_of_Incidents": 2,
+      "Operable_Region": 6,
+      "Last_Inspection": "2025-02-07",
+      "Inspector_ID": 1002
+    },
+    {
+      "Vehicle_ID": 3,
+      "Category": "Van",
+      "Reason": "Rusted chassis",
+      "Number_of_Incidents": 4,
+      "Operable_Region": 6,
+      "Last_Inspection": "2025-10-07",
+      "Inspector_ID": 1003
+    },
+    {
+      "Vehicle_ID": 4,
+      "Category": "Motorcycle",
+      "Reason": "Loose chain",
+      "Number_of_Incidents": 2,
+      "Operable_Region": 7,
+      "Last_Inspection": "2025-09-02",
+      "Inspector_ID": 1004
+    },
+    {
+      "Vehicle_ID": 5,
+      "Category": "Bus",
+      "Reason": "Faulty emergency exit",
+      "Number_of_Incidents": 1,
+      "Operable_Region": 8,
+      "Last_Inspection": "2025-12-12",
+      "Inspector_ID": 1005
+    },
+    {
+      "Vehicle_ID": 6,
+      "Category": "Car",
+      "Reason": "Expired fire extinguisher",
+      "Number_of_Incidents": 0,
+      "Operable_Region": 7,
+      "Last_Inspection": "2026-01-15",
+      "Inspector_ID": 1001
+    },
+    {
+      "Vehicle_ID": 7,
+      "Category": "Truck",
+      "Reason": "Worn tire treads",
+      "Number_of_Incidents": 3,
+      "Operable_Region": 6,
+      "Last_Inspection": "2025-11-20",
+      "Inspector_ID": 1006
+    },
+    {
+      "Vehicle_ID": 8,
+      "Category": "Van",
+      "Reason": "Oil leak detected",
+      "Number_of_Incidents": 1,
+      "Operable_Region": 5,
+      "Last_Inspection": "2025-10-05",
+      "Inspector_ID": 1003
+    },
+    {
+      "Vehicle_ID": 9,
+      "Category": "Motorcycle",
+      "Reason": "Broken indicator light",
+      "Number_of_Incidents": 0,
+      "Operable_Region": 7,
+      "Last_Inspection": "2025-12-28",
+      "Inspector_ID": 1007
+    }
+  ]
+}
