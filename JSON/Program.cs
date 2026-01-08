@@ -7,6 +7,15 @@ namespace JSON
     class Program
     {
 
+        public static List<Vehicle> SortVehicles(List<Vehicle> vehicles)
+        {
+            return vehicles.OrderBy(v => v.Category)
+                .ThenBy(v => v.OperableRegion)
+                .ToList();
+
+
+        }
+
         static int RandomNumber(string input)
         {
             int maxRange = Convert.ToInt32(input);
@@ -50,7 +59,6 @@ namespace JSON
 
         }
 
-        // This is your new procedure
         static void DisplayVehicles(List<Vehicle> vehicleList)
         {
             if (vehicleList == null || vehicleList.Count == 0)
@@ -129,7 +137,8 @@ namespace JSON
             {
                 Console.WriteLine("Select an option: \n1. View List" +
                     " \n2. Add Dummy Record" +
-                    "\n3. Delete a random Record");
+                    "\n3. Delete a random Record" +
+                    "\n4. Sort By Category & Region");
 
                 string option = Console.ReadLine();
 
@@ -146,6 +155,12 @@ namespace JSON
                     case "3":
                         DeleteRecord(Vehicles);
                         break;
+                    case "4":
+                        Vehicles = SortVehicles(Vehicles);
+                        Console.WriteLine("List sorted by Category and Operable Region.\n");
+                        DisplayVehicles(Vehicles);
+                        break;
+
 
 
                 }
