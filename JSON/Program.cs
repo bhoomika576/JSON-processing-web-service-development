@@ -1,11 +1,52 @@
 ﻿using JSON.model;
-using System.Security.Cryptography;
 using System.Text.Json;
 
 namespace JSON
 {
     class Program
     {
+
+
+        static void SearchRecord(List<Vehicle> vehicleList)
+        {
+            Console.WriteLine("Enter a Category keyword to search:");
+
+            try
+            {
+                string input = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("Warning: Search term cannot be empty.");
+                    return;
+                }
+                if (vehicleList == null)
+                {
+                    Console.WriteLine("Error: The vehicle list is empty or not loaded.");
+                    return;
+                }
+
+                List<Vehicle> searchResults = vehicleList
+                    .Where(v => v.Category != null && 
+                                v.Category.ToLower().Contains(input.ToLower()))
+                    .ToList();
+
+                
+                if (searchResults.Count > 0)
+                {
+                    Console.WriteLine($"\nSuccess! Found {searchResults.Count} match(es):");
+                    DisplayVehicles(searchResults);
+                }
+                else
+                {
+                    Console.WriteLine("No records found matching that keyword.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred during search: {ex.Message}");
+            }
+        }
 
         public static List<Vehicle> SortVehicles(List<Vehicle> vehicles)
         {
@@ -113,7 +154,7 @@ namespace JSON
                 if (newVehicle != null)
                 {
                     vehicleList.Add(newVehicle);
-                    Console.WriteLine(">> New record created and added to list in memory.\n");
+                    Console.WriteLine("New record created and added to list in memory.\n");
                 }
                 DisplayVehicles(vehicleList);
             }
@@ -135,10 +176,13 @@ namespace JSON
 
             while (true)
             {
-                Console.WriteLine("Select an option: \n1. View List" +
+                Console.WriteLine("Select an option: " +
+                    "\nPRESS 0 TO EXIT" +
+                    "\n1. View List" +
                     " \n2. Add Dummy Record" +
                     "\n3. Delete a random Record" +
-                    "\n4. Sort By Category & Region");
+                    "\n4. Sort By Category & Region" +
+                    "\n5. Search Something");
 
                 string option = Console.ReadLine();
 
@@ -160,6 +204,13 @@ namespace JSON
                         Console.WriteLine("List sorted by Category and Operable Region.\n");
                         DisplayVehicles(Vehicles);
                         break;
+                    case "5":
+                        SearchRecord(Vehicles);
+                        break;
+                    case "0":
+                        Console.WriteLine("Exiting program. Goodbye!");
+                        return;
+
 
 
 
