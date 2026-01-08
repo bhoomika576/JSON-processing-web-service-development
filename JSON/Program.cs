@@ -128,6 +128,9 @@ namespace JSON
 
 
 
+
+
+
         static void Main(string[] args)
         {
             reader fileReader = new reader();
@@ -138,7 +141,9 @@ namespace JSON
                 Console.WriteLine("Select an option: \n1. View List" +
                     " \n2. Add Dummy Record" +
                     "\n3. Delete a random Record" +
-                    "\n4. Sort By Category & Region");
+                    "\n4. Sort By Category & Region" +
+                     "\n5. Search " +
+                      "\n6. Report" );
 
                 string option = Console.ReadLine();
 
