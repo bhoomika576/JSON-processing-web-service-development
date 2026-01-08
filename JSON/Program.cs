@@ -7,6 +7,33 @@ namespace JSON
     {
 
 
+        static void Report(List<Vehicle> vehicleList)
+        {
+
+            if (vehicleList == null || !vehicleList.Any())
+            {
+                Console.WriteLine("No data available to group.");
+                return;
+            }
+
+            var riskGroups = vehicleList.GroupBy(v => v.Category);
+            
+            foreach (var group in riskGroups)
+            {
+                string categoryName = group.Key;
+                
+                int count = group.Count();
+                
+                int totalIncidents = group.Sum(v => v.NumOfIncidents);
+
+                Console.WriteLine($"Category: {categoryName}");
+                Console.WriteLine($"\t - Vehicles Tracked: {count}");
+                Console.WriteLine($"\t - Total Incidents:  {totalIncidents}");
+                Console.WriteLine("-------------------------------------------------");
+            }
+        }
+
+
         static void SearchRecord(List<Vehicle> vehicleList)
         {
             Console.WriteLine("Enter a Category keyword to search:");
@@ -185,7 +212,8 @@ namespace JSON
                     " \n2. Add Dummy Record" +
                     "\n3. Delete a random Record" +
                     "\n4. Sort By Category & Region" +
-                    "\n5. Search Something");
+                    "\n5. Search Something" +
+                    "\n6. Report");
 
                 string option = Console.ReadLine();
 
@@ -209,6 +237,9 @@ namespace JSON
                         break;
                     case "5":
                         SearchRecord(Vehicles);
+                        break;
+                    case "6":
+                        Report(Vehicles);
                         break;
                     case "0":
                         Console.WriteLine("Exiting program. Goodbye!");
